@@ -11,9 +11,15 @@
 
 
     let naviguer = function(){
-
+        var hash = window.location.hash;
+        if(!hash){
         let vueListeProvince = new VueListeProvince();
         vueListeProvince.afficher(listeProvince);
+        }else if(hash.match(/^#province\/[0-9]+/)){
+            var idProvince = hash.match(/^#province\/([0-9]+)/)[1];
+            var vueProvince = new VueProvince();
+            vueProvince.afficher(listeProvince.chercherAvecId(idProvince));
+        }
 
 
     }

@@ -12,7 +12,6 @@ var VueListeProvince = (function(){
             let li = "";
 
             for (var position in listeProvince.getListeProvince()) {
-                console.log(position);
                 li += '<li><a href="#province/' + listeProvince.getListeProvince()[position].id + '">';
                 li += listeProvince.getListeProvince()[position].nom + '</a></li>'
             }
