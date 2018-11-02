@@ -15,13 +15,13 @@ let VueProvince = (function() {
                 provinceNom.innerHTML = province.nom;
 
                 provincePopulation = document.getElementById("province-population");
-                provincePopulation.innerHTML = province.population;
+                provincePopulation.innerHTML = "Population : "+ province.population + " habitants";
 
                 provinceSuperficie = document.getElementById("province-superficie");
-                provinceSuperficie.innerHTML = province.superficie;
+                provinceSuperficie.innerHTML = "Superficie : "+province.superficie + " habitants";
 
                 provinceCapital = document.getElementById("province-capital");
-                provinceCapital.innerHTML = province.capital;
+                provinceCapital.innerHTML = "Capital : "+ province.capital ;
             }
         })
 })();
