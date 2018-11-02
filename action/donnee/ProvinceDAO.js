@@ -36,13 +36,20 @@ var ProvinceDAO = function () {
                 listeProvince[position].capital);
             listeProvince[position] = province;
         }*/
-        var listeProvince = [
+        var listeProvince = new Provinces([
             new Province(1, "Québec", 8164361, 1542056, "Québec"),
             new Province(2, "Ontario", 13448494, 1076395, "Toronto"),
             new Province(3, "Alberta", 4067175, 661848, "Edmonton"),
             new Province(4, "Colombie-Britannique", 4648055, 944735, "Victoria"),
 
-        ];
+        ]);
+       /* var listeProvince = [
+            new Province(1, "Québec", 8164361, 1542056, "Québec"),
+            new Province(2, "Ontario", 13448494, 1076395, "Toronto"),
+            new Province(3, "Alberta", 4067175, 661848, "Edmonton"),
+            new Province(4, "Colombie-Britannique", 4648055, 944735, "Victoria"),
+
+        ];*/
         return listeProvince;
     }
 
