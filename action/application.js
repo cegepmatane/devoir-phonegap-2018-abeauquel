@@ -2,7 +2,8 @@
     let instance = this;
 
     var initialiser = function(){
-
+        instance.provinceDAO = new ProvinceDAO();
+        instance.listeProvince = this.provinceDAO.lister();
         window.addEventListener("hashchange", naviguer);
 
         naviguer();
@@ -11,8 +12,8 @@
 
     let naviguer = function(){
 
-        let liste = new ListeCadeauVue();
-        listeCadeauVue.afficher(listeCadeauDonnee);
+        let vueListeProvince = new VueListeProvince();
+        vueListeProvince.afficher(listeProvince);
 
 
     }
