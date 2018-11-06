@@ -2,7 +2,14 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <title>Liste des provinces</title>
     <style type="text/css">
@@ -21,25 +28,35 @@ Il y a une erreur dans le programme
 <script type="plain/text" id="page-liste-province">
             <div class='container'>
                 <h1>Liste des provinces du canada</h1>
-                <ul id="liste-province" class="list-group"></ul>
+                <ul id="liste-province" class="collection"></ul>
            </div>
 </script>
 
 <script type="plain/text" id="page-province">
-            <div class="container" style="margin-top:10px">
-            <div class="card">
-            <div class="card-header">
-            <h1 id="province-nom" class="card-title">Province </h1>
-             </div>
-            <div class="card-body">
+
+                <div class="row">
+                    <div class="col s2 m2">
+                    </div>
+                    <div class="col s8 m8">
+                        <div class="card blue ">
+                            <div class="card-content white-text">
+                            <span id="province-nom" class="card-title">Province </span>
 
 
-                <p class="card-text" id="province-capital">Province capital</p>
-                <p class="card-text" id="province-population">Province population</p>
-                <p class="card-text" id="province-superficie">Province superficie</p>
-           </div>
-           </div>
-           </div>
+
+                                <p id="province-capital">Province capital</p>
+                                <p id="province-population">Province population</p>
+                                <p id="province-superficie">Province superficie</p>
+                                <div class="card-action">
+                                  <a href="#">Retour</a>
+                                  <a href="#">Modifier</a>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+
+
     </script>
 
 

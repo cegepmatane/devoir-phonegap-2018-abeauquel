@@ -12,8 +12,8 @@ var VueListeProvince = (function(){
             let li = "";
 
             for (var position in listeProvince.getListeProvince()) {
-                li += '<li  style="list-style-type: none" ><a class="list-group-item"  href="#province/' + listeProvince.getListeProvince()[position].id + '">';
-                li += listeProvince.getListeProvince()[position].nom + '</a></li>'
+                li += '<a class="collection-item"  href="#province/' + listeProvince.getListeProvince()[position].id + '">';
+                li += listeProvince.getListeProvince()[position].nom + '</a>'
             }
 
             baliseListeProvince.innerHTML = li;
