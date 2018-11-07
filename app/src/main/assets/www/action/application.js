@@ -10,7 +10,7 @@
     }
 
 
-    let naviguer = function(){
+    var naviguer = function(){
         var hash = window.location.hash;
         if(!hash){
         let vueListeProvince = new VueListeProvince();
@@ -22,11 +22,16 @@
             vueProvince.afficher(listeProvince.chercherAvecId(idProvince));
         }
         else if(/^#ajouter-province/){
-            var vueAjouterProfince = new VueAjouterProvince();
+            var vueAjouterProfince = new VueAjouterProvince(actionEnregisterProvince);
             vueAjouterProfince.afficher();
         }
 
+    }
 
+    var actionEnregisterProvince = function (province) {
+        console.log("J'ajoute une province");
+        this.provinceDAO.ajouter(province);
+        naviguerAccueil();
     }
 
     let naviguerAccueil = function(){
