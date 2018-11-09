@@ -1,5 +1,5 @@
 var VueListeProvince = (function(){
-    let pageListeProvince = document.getElementById("page-liste-province").innerHTML;//recuperation du javascript
+    var pageListeProvince = document.getElementById("page-liste-province").innerHTML;//recuperation du javascript
 
     return function () {
 
@@ -17,7 +17,7 @@ var VueListeProvince = (function(){
 
                 li+="<div class='row'  style='all:unset; clear: none; '>";
 
-                li += '<a class="collection-item col s9" style="padding-top: 17px;padding-bottom: 17px;" href="#province/' + maProvince.id + '">';
+                li += '<a class="collection-item col s8" style="padding-top: 17px;padding-bottom: 17px;" href="#province/' + maProvince.id + '">';
 
                 li += maProvince.nom ;
                 li+='</a> ';
@@ -25,7 +25,7 @@ var VueListeProvince = (function(){
                 li+='<a class="waves-effect waves-light btn-large blue col s2" style=" text-align: center"' +
                     '  href="#modifier-province\/'+maProvince.id+'" ><i class="material-icons">edit</i></a>';
 
-                li+='<a class="waves-effect waves-light btn-large red col s1 modal-trigger" style="margin: auto; text-align: center" ' +
+                li+='<a class="waves-effect waves-light btn-large red col s2 modal-trigger" style="margin: auto; text-align: center" ' +
                     //' href="#supprimer-province\/'+listeProvince.getListeProvince()[position].id+'" ><i class="small material-icons">delete_forever</i></a>';
                     ' href="#verification-suppression-province\/'+maProvince.id+'" ><i class="small material-icons">delete_forever</i></a>';
 
