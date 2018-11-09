@@ -1,1 +1,3 @@
-training_phonegap 2
+Alexandre Beauquel
+
+Devoir phoneGap
