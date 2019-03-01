@@ -17,6 +17,7 @@ var ProvinceDAO = function () {
     this.modifier = function (nouvelleProvince) {
         province = listeProvince.chercherAvecId(nouvelleProvince.id);
         province.nom = nouvelleProvince.nom;
+        province.image = nouvelleProvince.image;
         province.capital = nouvelleProvince.capital;
         province.superficie = nouvelleProvince.superficie;
         province.population = nouvelleProvince.population;
@@ -43,6 +44,7 @@ var ProvinceDAO = function () {
             var province = new Province(
                 listeProvince.getListeProvince()[position].id,
                 listeProvince.getListeProvince()[position].nom,
+                listeProvince.getListeProvince()[position].image,
                 listeProvince.getListeProvince()[position].population,
                 listeProvince.getListeProvince()[position].superficie,
                 listeProvince.getListeProvince()[position].capital);
