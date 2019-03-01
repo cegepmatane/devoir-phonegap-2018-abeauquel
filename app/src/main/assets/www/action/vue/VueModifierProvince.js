@@ -5,6 +5,7 @@ let VueModifierProvince = (function() {
         function(actionEnregisterProvince){
             var idProvince;
             var provinceNom;
+            var provinceImage;
             var provincePopulation;
             var provinceSuperficie;
             var provinceCapital;
@@ -19,6 +20,9 @@ let VueModifierProvince = (function() {
                 provinceNom = document.getElementById("nom");
                 provinceNom.value = province.nom;
 
+                provinceImage = document.getElementById("lien-image");
+                provinceImage.value = province.image;
+                
                 provincePopulation = document.getElementById("population");
                 provincePopulation.value = province.population ;
 
@@ -33,11 +37,12 @@ let VueModifierProvince = (function() {
             var enregistrerProvince = function (evenement) {
                 evenement.preventDefault();
                 var nom = document.getElementById("nom").value;
+                var image = document.getElementById("lien-image").value;
                 var capital = document.getElementById("capital").value;
                 var population = document.getElementById("population").value;
                 var superficie = document.getElementById("superficie").value;
 
-                actionEnregisterProvince(new Province(idProvince, nom, population, superficie, capital));
+                actionEnregisterProvince(new Province(idProvince, nom, image, population, superficie, capital));
             }
         })
 })();
