@@ -4,6 +4,7 @@ let VueProvince = (function() {
     return(
         function(){
             var provinceNom;
+            var provinceImage;
             var provincePopulation;
             var provinceSuperficie;
             var provinceCapital;
@@ -22,6 +23,9 @@ let VueProvince = (function() {
 
                 provinceCapital = document.getElementById("province-capital");
                 provinceCapital.innerHTML = "Capital : "+ province.capital ;
+
+                provinceImage = document.getElementById("province-image");
+                provinceImage.src = province.image;
 
                 actionNaviguerModifierProvince = document.getElementById("action-naviguer-vers-modifier-province");
                 actionNaviguerModifierProvince.setAttribute('href', '#modifier-province/'+province.id);
