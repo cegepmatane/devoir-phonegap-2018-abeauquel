@@ -1,4 +1,4 @@
-var Province = function (id, nom, population, superficie, capital) {
+var Province = function (id, nom, image, population, superficie, capital) {
     this.id = id;
     this.nom = nom;
     this.image = image;
